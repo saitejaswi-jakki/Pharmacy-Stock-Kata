@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<script type="text/javascript">
+const formulary = [];
+// Add Paracetamol and Ibuprofen to formulary
+formulary[0]= "Paracetamol";
+formulary[1]= "Ibuprofen";
+// Add Amoxicillin to formulary
+formulary[2]= "Amoxicillin";
+formulary[3]= "Paracetamol";
+// Add Codeine, Diclofenac, Simvastatin, Tramadol to formulary
+formulary[4]= "Codeine";
+formulary[5]= "Diclofenac";
+formulary[6]= "Simvastatin";
+formulary[7]= "Tramadol";
+const uniqueFormulary = [...new Set(formulary)]
+const sortFormulary = [...new Set(uniqueFormulary)].sort()
+// List the names of the Medications in the formulary
+    for (var eachFormulary of sortFormulary) {  
+     console.log(eachFormulary)
+       }
+const array = [
+  {MedicationName: "Amoxicillin", Strength: '250mg', PackSize: '20'}, 
+  {MedicationName: "Codeine", Strength: '30mg', PackSize: '10'},
+  {MedicationName: "Diclofenac", Strength: '250mg', PackSize: '25'},
+  {MedicationName: "Ibuprofen", Strength: '500mg', PackSize: '50'},
+  {MedicationName: "Paracetamol", Strength: '500mg', PackSize: '50'},
+  {MedicationName: "Simvastatin", Strength: '10mg', PackSize: '10'},
+  {MedicationName: "Tramadol", Strength: '50mg', PackSize: '100'},
+  {MedicationName: "Warfarin", Strength: '3mg', PackSize: '50'},
+  ]
+const transformed = array.reduce((acc, {MedicationName, ...x}) => { acc[MedicationName] = x; return acc}, {})
+console.table(transformed)
+const formularyAdd = transformed;
+
+// Add 100 packs of 50x500mg Paracetamol
+formularyAdd['Paracetamol']['TotalPacks']=parseInt(formularyAdd['Paracetamol']['PackSize'])+100;
+// Add 100 packs of 50x500mg Ibuprofen
+formularyAdd['Ibuprofen']['TotalPacks']=parseInt(formularyAdd['Ibuprofen']['PackSize'])+100;
+// Add 20 packs of 20x250mg Amoxicillin
+formularyAdd['Amoxicillin']['TotalPacks']=parseInt(formularyAdd['Amoxicillin']['PackSize'])+20;
+// Add 5 packs of 100x50mg Tramadol
+formularyAdd['Tramadol']['TotalPacks']=parseInt(formularyAdd['Tramadol']['PackSize'])+5;
+// Add 20 packs of 10x30mg Codeine
+formularyAdd['Codeine']['TotalPacks']=parseInt(formularyAdd['Codeine']['PackSize'])+20;
+// Add 10 packs of 10x10mg Simvastatin
+formularyAdd['Simvastatin']['TotalPacks']=parseInt(formularyAdd['Simvastatin']['PackSize'])+10;
+// Add 5 packs of 50x3mg Warfarin
+formularyAdd['Warfarin']['TotalPacks']=parseInt(formularyAdd['Warfarin']['PackSize'])+5;
+
+
+
+console.table(formularyAdd)
+</script>
+</head>
+</html>
+
+
