@@ -1,6 +1,6 @@
 readme.markdown
 
-# Pharamacy Stock Kata
+# Pharmacy Stock Kata
 
 
 ## Table of contents
@@ -13,7 +13,7 @@ readme.markdown
 
 # Introduction
 
-* The application Pharamacy Stock Kata is developed using java script where this application consist the medical Inventory that Displays the list of medications that are in the stock so that the medication could dispensed to the patients and also understand when we need to order more medications from suppliers.
+* The application Pharmacy Stock Kata is developed using java script where this application consist the medical Inventory that Displays the list of medications that are in the stock so that the medication could dispensed to the patients and also understand when we need to order more medications from suppliers.
 
 # Requirments
 
@@ -21,7 +21,7 @@ readme.markdown
 
 ## Scenario - 1
 
-* Provides a pharamacist a list of medications in his formulary so that the medicationns could be dispensed to his patients 
+* Provides a pharmacist a list of medications in his formulary so that the medicationns could be dispensed to his patients 
   
   ### Asumptions :
   1. The name of the medication acting as a unique Identifier 
