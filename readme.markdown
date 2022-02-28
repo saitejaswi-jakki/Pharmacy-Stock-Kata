@@ -33,7 +33,7 @@ readme.markdown
 
 ## Scenario- 2
 
-* Provides a pharamacist the ability to add medication to the inventory.so that to maintain stock levels of medications in formulary and to understand when is the need to order more medication from supliers.
+* Provides a pharmacist the ability to add medication to the inventory.so that to maintain stock levels of medications in formulary and to understand when is the need to order more medication from supliers.
   
  ### Assumptions :
  1. only medication in the formulary can be added to the stock 
